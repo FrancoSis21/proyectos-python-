@@ -7,7 +7,7 @@ import json
 from datetime import datetime
 
 class Nodo:
-    """Nodo del QuadTree - Adaptado del código C++"""
+    """Nodo del QuadTree - Adaptado del código Python"""
     def __init__(self, info=0, SI=None, SD=None, ID=None, II=None):
         self.Info = info  # 0=negro, 1=blanco, 2=gris (mixto)
         self.SI = SI      # Superior Izquierdo
@@ -931,4 +931,5 @@ RENDIMIENTO:
 if __name__ == "__main__":
     root = tk.Tk()
     app = QuadTreeGUI(root)
+
     root.mainloop()
